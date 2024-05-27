@@ -4,7 +4,14 @@
   "type": "object",
   "properties": {
     "role": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "system",
+        "user",
+        "assistant",
+        "tool_calls",
+        "tool_response"
+      ]
     },
     "name": {
       "type": "string"
@@ -20,5 +27,5 @@
       ]
     }
   },
-  "required": ["role", "name", "content"]
+  "required": ["role", "content"]
 }

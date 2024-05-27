@@ -1,0 +1,22 @@
+{
+  "name": "standard-chatml",
+  "version": "0.0.1",
+  "description": "Standardized spec and vendor-specific transforms for ChatML",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julep-ai/standard-chatml.git"
+  },
+  "keywords": [
+    "chatml"
+  ],
+  "author": "Diwank Tomer <singh@diwank.name>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/julep-ai/standard-chatml/issues"
+  },
+  "homepage": "https://github.com/julep-ai/standard-chatml#readme"
+}

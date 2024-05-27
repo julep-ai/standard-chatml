@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "standard-chatml"
+version = "0.0.1"
+description = "Standardized spec and vendor-specific transforms for ChatML"
+authors = ["Diwank Tomer <diwank@julep.ai>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

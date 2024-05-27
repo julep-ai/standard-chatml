@@ -1,0 +1,29 @@
+name: Validate JSON Schema
+
+on:
+  push:
+    paths:
+      - 'specs/*.json'
+  pull_request:
+    paths:
+      - 'specs/*.json'
+
+jobs:
+  validate-jsonschema:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install ajv-cli
+        run: npm install -g ajv-cli
+
+      - name: Validate JSON Schema files
+        run: ajv validate -s specs/*.json -r specs/*.json

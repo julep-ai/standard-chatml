@@ -27,5 +27,5 @@
       ]
     }
   },
-  "required": ["role", "name", "content"]
+  "required": ["role", "content"]
 }
